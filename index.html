@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/css/layout.css">
@@ -11,68 +11,213 @@
     <title>NexusTech</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/index.html">inicio</a></li>
-            <li><a href="/pages/categorias.html">Categorias</a></li>
-            <li><a href="/pages/comunidad.html">Comunidad</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
-            <li><a href="/pages/eventos.html">Eventos</a></li>
-            <li><a href="/pages/reseñas.html">Reseñas</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div id="hero">
-            <div class="hero-slide">
-                <div class="hero-slide-1"></div>
-                <div class="hero-slide-2"></div>
-                <div class="hero-slide-3"></div>
+    <header class="header">
+        <div class="container header__container">
+                <a class="header__logo">...</a>
+                <input type="checkbox" id="menu-toggle" class="header__checkbox">
+                <label for="menu-toggle" class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+             
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="index.html" class="header__link header__link--active">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/categorias.html" class="header__link">Categorías</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/resenas.html" class="header__link">Reseñas</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/comunidad.html" class="header__link">Comunidad</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/eventos.html" class="header__link">Eventos</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./pages/contacto.html" class="header__link">contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+        <main>
+            <section class="hero">
+                                <div class="hero__overlay"></div>
+
+                                <div class="hero__shape hero__shape--one"></div>
+                                <div class="hero__shape hero__shape--two"></div>
+
+                            <div class="container hero__container">
+
+                                <span class="hero__badge">Tecnología • IA • Software</span>
+
+                                <h1 class="hero__title">
+                                    El futuro de la tecnología comienza aquí.
+                                </h1>
+
+                                <p class="hero__text">
+                                    Descubre las últimas noticias, análisis, gadgets, inteligencia artificial y tendencias del mundo tecnológico en Nexus Tech.
+                                </p>
+
+                                <a href="#featured" class="hero__button">Explorar artículos</a>
+
+                                <div class="hero__scroll">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="featured" id="featured">
+                <div class="container">
+
+                    <div class="section-header">
+                        <span class="section-header__subtitle">Últimas publicaciones</span>
+                        <h2 class="section-header__title">Artículos Destacados</h2>
+                        <p class="section-header__text">
+                            Mantente informado con las noticias, análisis y tendencias más relevantes del mundo tecnológico.
+                        </p>
+                    </div>
+
+                    <div class="featured__grid">
+
+                        <!-- Tarjeta 1 -->
+
+                        <article class="article-card">
+                            <img src="./assets/img/ia.webp" alt="Inteligencia Artificial" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--ai">Inteligencia Artificial</span>
+                                <h3 class="article-card__title">La IA redefine el futuro del desarrollo de software</h3>
+                                <div class="article-card__meta">
+                                    <span>25 Jul 2026</span>
+                                    <span>Samuel Mantilla</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Descubre cómo la inteligencia artificial está transformando la manera en que los desarrolladores crean aplicaciones.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="./assets/img/cybersecurity.webp" alt="Ciberseguridad" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--security">Ciberseguridad</span>
+                                <h3 class="article-card__title">Los ataques ransomware aumentan un 35% durante 2026</h3>
+                                <div class="article-card__meta">
+                                    <span>22 Jul 2026</span>
+                                    <span>Laura Gómez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Analizamos las nuevas amenazas digitales y las mejores prácticas para proteger empresas y usuarios.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="./assets/img/gadgets.webp" alt="Gadgets" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--gadgets">Gadgets</span>
+                                <h3 class="article-card__title">El smartphone plegable que promete revolucionar el mercado</h3>
+                                <div class="article-card__meta">
+                                    <span>20 Jul 2026</span>
+                                    <span>Carlos Ruiz</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Pantallas más resistentes, baterías optimizadas y un diseño que redefine la experiencia móvil.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="./assets/img/software.webp" alt="Desarrollo de Software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">Desarrollo</span>
+                                <h3 class="article-card__title">Cinco tecnologías que todo desarrollador debería dominar</h3>
+                                <div class="article-card__meta">
+                                    <span>18 Jul 2026</span>
+                                    <span>Ana Torres</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Un recorrido por las herramientas y tendencias que marcarán el futuro del desarrollo moderno.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="./assets/img/quantum.webp" alt="Computación Cuántica" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--trends">Tendencias</span>
+                                <h3 class="article-card__title">Computación cuántica: el próximo gran salto tecnológico</h3>
+                                <div class="article-card__meta">
+                                    <span>15 Jul 2026</span>
+                                    <span>David Martínez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Descubre cómo esta tecnología cambiará la investigación científica y la industria en los próximos años.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="./assets/img/cloud.webp" alt="Cloud Computing" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--cloud">Cloud</span>
+                                <h3 class="article-card__title">La nube híbrida continúa liderando la transformación digital</h3>
+                                <div class="article-card__meta">
+                                    <span>12 Jul 2026</span>
+                                    <span>Sofía Herrera</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Empresas de todo el mundo adoptan soluciones híbridas para mejorar el rendimiento y la seguridad.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <div class="footer__brand">
+                <h3>Nexus Tech</h3>
+                <p>
+                    Tu fuente confiable sobre tecnología, innovación y desarrollo de software.
+                </p>
             </div>
-            <div class="hero">
-                <h1 class="hero-title">Bienvenido a NexusTech</h1>
-                <p class="hero">Descubre las últimas noticias y tendencias en tecnología.</p>
+
+            <div class="footer__column">
+                <h4>Explorar</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Categorías</a>
+                <a href="#">Reseñas</a>
+            </div>
+
+            <div class="footer__column">
+                <h4>Comunidad</h4>
+                <a href="#">Eventos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Foro</a>
+            </div>
+
+            <div class="footer__column">
+                <h4>Síguenos</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">X</a>
             </div>
 
         </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="card-container">
-                <div class="card-1">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>
-                </div>
-                <div class="card-2">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>
-                </div>
-                <div class="card-3">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>
-                </div>
-                <div class="card-4">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>
-                </div>
-                <div class="card-5">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>
-                </div>
-                <div class="card-6">
-                    <h2>Card Title</h2>
-                    <p>Card content goes here.</p>  
-                </div>
-            </div>
+        <div class="footer__copy">
+            © 2026 Nexus Tech. Todos los derechos reservados.
         </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 NexusTech. Todos los derechos reservados.</p>
-            <p>Contacto:</p>
-            <p>email: info@nexustech.com</p>
-            <p>nombre: NexusTech</p>
-            <p>numero: +1 (555) 123-4567</p>
-        </div>
+
     </footer>
 </body>
 </html>
