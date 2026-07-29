@@ -1,0 +1,369 @@
+section{
+    padding:100px 0;
+}
+
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero__image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    z-index:0;
+}
+
+
+.hero__overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(8,12,25,.65);
+    z-index:1;
+}
+
+.hero__container{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    padding-top:80px;
+}
+
+.hero__shape{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.35;
+}
+
+.hero__shape--one{
+    width:250px;
+    height:250px;
+    background:var(--clr-primary);
+    top:10%;
+    left:-80px;
+    animation:floatOne 8s ease-in-out infinite;
+}
+
+.hero__shape--two{
+    width:300px;
+    height:300px;
+    background:#8b5cf6;
+    bottom:-80px;
+    right:-80px;
+    animation:floatTwo 10s ease-in-out infinite;
+}
+
+.featured__grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+}
+.section-header{
+    max-width:650px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.section-header__subtitle{
+    display:inline-block;
+    margin-bottom:12px;
+    color:var(--clr-primary);
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.85rem;
+}
+
+.section-header__title{
+    margin-bottom:20px;
+    font-size:2.7rem;
+}
+
+.section-header__text{
+    font-size:1.05rem;
+}
+
+.article-card{
+    overflow:hidden;
+    background:var(--clr-surface);
+    border:1px solid var(--clr-border);
+    border-radius:var(--radius-md);
+    transition:var(--transition);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.article-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--clr-primary);
+    box-shadow:var(--shadow);
+}
+
+.article-card__image{
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.article-card:hover .article-card__image{
+    transform:scale(1.08);
+}
+
+.article-card__content{
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.article-card__category{
+    display:inline-block;
+    margin-bottom:18px;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.article-card__category--ai{
+    background:rgba(56,189,248,.15);
+    color:#38BDF8;
+}
+
+.article-card__title{
+    margin-bottom:18px;
+    font-size:1.4rem;
+    line-height:1.3;
+}
+
+.article-card__meta{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    color:var(--clr-text-light);
+    font-size:.9rem;
+}
+
+.article-card__description{
+    margin-bottom:24px;
+}
+.article-card__button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--clr-primary);
+    font-weight:600;
+    transition:var(--transition);
+    margin-top: auto;
+}
+
+.article-card__button:hover{
+    color:white;
+}
+
+
+.footer{
+    margin-top:120px;
+    border-top:1px solid var(--clr-border);
+}
+
+.footer__container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+    padding:70px 0;
+}
+
+.footer__copy{
+    padding:25px;
+    text-align:center;
+    border-top:1px solid var(--clr-border);
+}
+
+.footer__column a{
+    position:relative;
+}
+
+.footer__column a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:0;
+    height:1px;
+    background:var(--clr-primary);
+    transition:var(--transition);
+}
+
+.footer__column a:hover::after{
+    width:100%;
+}
+
+
+/*==================== CATEGORIES HERO ====================*/
+
+.categories-hero {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #ffffff;
+  /* Espacio superior para compensar el header fijo (80px) + margen */
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+
+/* Imagen de fondo del Hero */
+.categories-hero .hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+/* Capa Oscura (Overlay) */
+.categories-hero .hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.75);
+  z-index: 2;
+}
+
+/* Contenedor del Texto (Badge, Título y Descripción) */
+.categories-hero .container {
+  position: relative;
+  z-index: 10; /* Se coloca por encima de la imagen (z-index: 1) y del overlay (z-index: 2) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*==================== CATEGORIES ====================*/
+
+.categories{
+    padding:40px 0 100px;
+}
+
+.categories__container{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+/*==================== FILTERS ====================*/
+
+.filters{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    position:sticky;
+    top:110px;
+    padding:25px;
+}
+
+/*==================== FILTER GROUP ====================*/
+
+.filters__group{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.filters__group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/*==================== CONTENT ====================*/
+
+.categories__content{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+/*==================== SEARCH ====================*/
+
+.search{
+    display:flex;
+}
+
+/*==================== GRID ====================*/
+
+.articles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/*==================== PAGINATION ====================*/
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+
+@keyframes heroZoom{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
+
+@keyframes floatOne{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-30px);
+    }
+}
+
+@keyframes floatTwo{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(35px);
+    }
+}
+
+@keyframes scroll{
+    0%{
+        opacity:1;
+        transform:translate(-50%,0);
+    }
+    100%{
+        opacity:0;
+        transform:translate(-50%,16px);
+    }
+}
