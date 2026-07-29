@@ -123,3 +123,17 @@
     padding-top: 12px;
   }
 }
+/* Media query para Vista de Eventos */
+@media (max-width: 600px) {
+  .calendar-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendar-card__date {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+}
