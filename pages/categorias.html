@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías | Nexus Tech</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="../index.html" class="header__logo">
+                Nexus <span>Tech</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="header__checkbox">
+            <label for="menu-toggle" class="header__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="../index.html" class="header__link">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="categorias.html" class="header__link header__link--active">Categorias</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="resenas.html" class="header__link">Reseñas</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="comunidad.html" class="header__link">Comunidad</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="eventos.html" class="header__link">Eventos</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="contacto.html" class="header__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="categories-hero">
+            <img src="../assets/img/hero.webp" alt="Banner principal de Nexus Tech" class="hero__image">
+            
+            <div class="hero__overlay"></div>
+
+            <div class="container">
+                <span class="categories-hero__badge">
+                    Explora nuestro contenido
+                </span>
+                <h1 class="categories-hero__title">
+                    Categorías
+                </h1>
+                <p class="categories-hero__text">
+                    Encuentra artículos organizados por inteligencia artificial, desarrollo de software, gadgets, ciberseguridad y las últimas tendencias tecnológicas.
+                </p>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container categories__container">
+                <aside class="filters">
+                    <h2 class="filters__title">
+                        Filtros
+                    </h2>
+                    <div class="filters__group">
+
+                        <h3 class="filters__subtitle">
+                            Categorías
+                        </h3>
+
+                        <label>
+                            <input type="checkbox">
+                            Inteligencia Artificial
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Gadgets
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Ciberseguridad
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Desarrollo de Software
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Tendencias
+                        </label>
+                    </div>
+                    <div class="filters__group">
+                        <h3 class="filters__subtitle">
+                            Fecha
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="fecha">
+                            Últimos 7 días
+                        </label>
+
+                        <label>
+                            <input type="radio" name="fecha">
+                            Últimos 30 días
+                        </label>
+
+                        <label>
+                            <input type="radio" name="fecha">
+                            Más antiguos
+                        </label>
+                    </div>
+                </aside>
+                <div class="categories__content">
+                    <div class="search">
+                        <input
+                            type="search"
+                            class="search__input"
+                            placeholder="Buscar artículos...">
+                    </div>
+
+                    <!--===== GRID =====-->
+
+                    <div class="articles-grid">
+                        <article class="article-card">
+                            <img src="../assets/img/ia.webp" alt="Inteligencia Artificial" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--ai">Inteligencia Artificial</span>
+                                <h3 class="article-card__title">La IA redefine el futuro del desarrollo de software</h3>
+                                <div class="article-card__meta">
+                                    <span>25 Jul 2026</span>
+                                    <span>Samuel Mantilla</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Descubre cómo la inteligencia artificial está transformando la manera en que los desarrolladores crean aplicaciones.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/cibersegu.webp" alt="Ciberseguridad" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--security">Ciberseguridad</span>
+                                <h3 class="article-card__title">Los ataques ransomware aumentan un 35% durante 2026</h3>
+                                <div class="article-card__meta">
+                                    <span>22 Jul 2026</span>
+                                    <span>Laura Gómez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Analizamos las nuevas amenazas digitales y las mejores prácticas para proteger empresas y usuarios.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/gadgets.webp" alt="Gadgets" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--gadgets">Gadgets</span>
+                                <h3 class="article-card__title">El smartphone plegable que promete revolucionar el mercado</h3>
+                                <div class="article-card__meta">
+                                    <span>20 Jul 2026</span>
+                                    <span>Carlos Ruiz</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Pantallas más resistentes, baterías optimizadas y un diseño que redefine la experiencia móvil.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/software.webp" alt="Desarrollo de Software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">Desarrollo</span>
+                                <h3 class="article-card__title">Cinco tecnologías que todo desarrollador debería dominar</h3>
+                                <div class="article-card__meta">
+                                    <span>18 Jul 2026</span>
+                                    <span>Ana Torres</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Un recorrido por las herramientas y tendencias que marcarán el futuro del desarrollo moderno.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/quantum.webp" alt="Computación Cuántica" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--trends">Tendencias</span>
+                                <h3 class="article-card__title">Computación cuántica: el próximo gran salto tecnológico</h3>
+                                <div class="article-card__meta">
+                                    <span>15 Jul 2026</span>
+                                    <span>David Martínez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Descubre cómo esta tecnología cambiará la investigación científica y la industria en los próximos años.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/cloud.webp" alt="Cloud Computing" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--cloud">Cloud</span>
+                                <h3 class="article-card__title">La nube híbrida continúa liderando la transformación digital</h3>
+                                <div class="article-card__meta">
+                                    <span>12 Jul 2026</span>
+                                    <span>Sofía Herrera</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Empresas de todo el mundo adoptan soluciones híbridas para mejorar el rendimiento y la seguridad.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/ia2.webp" alt="Inteligencia Artificial" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--ai">Inteligencia Artificial</span>
+                                <h3 class="article-card__title">IA Generativa y Modelos Multimodales en 2026</h3>
+                                <div class="article-card__meta">
+                                    <span>22 ene 2026</span>
+                                    <span>paula Gómez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Los modelos del lenguaje han dado paso a los agentes multimodales nativos. Descubre cómo la integración de visión por computadora, procesamiento de audio y generación de código en tiempo real está transformando la creación de software y la interacción hombre-máquina.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/cibersegu2.webp" alt="Ciberseguridad" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--security">Ciberseguridad</span>
+                                <h3 class="article-card__title">Ciberseguridad Zero Trust: Nunca Confíes, Siempre Verifica</h3>
+                                <div class="article-card__meta">
+                                    <span>22 Jul 2026</span>
+                                    <span>popa Gómez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Con el trabajo remoto y las infraestructuras multicloud, el perímetro defensivo tradicional desapareció. Analizamos cómo implementar políticas de mínimo privilegio, autenticación continua y microsegmentación para blindar cualquier sistema.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/software2.webp" alt="Desarrollo de software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">Ciencia y Desarrollo</span>
+                                <h3 class="article-card__title">Computación Cuántica: Conceptos Clave para Desarrolladores</h3>
+                                <div class="article-card__meta">
+                                    <span>15 Jul 2026</span>
+                                    <span>tatiana martinez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    ¿Qué es un qubit y cómo funciona el entrelazamiento cuántico? Exploramos los kits de desarrollo modernos como Qiskit y cómo la computación cuántica impactará la criptografía, la medicina y la optimización de algoritmos
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/cloud2.webp" alt="cloud Computing" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--cloud  ">Conectividad</span>
+                                <h3 class="article-card__title">>Redes 6G e IoT: La Próxima Revolución de la Conectividad</h3>
+                                <div class="article-card__meta">
+                                    <span>11 feb 2026</span>
+                                    <span>catalina leon</span>
+                                </div>
+                                <p class="article-card__description">
+                                    La integración de inteligencia artificial en la propia infraestructura de red permitirá conectar miles de millones de dispositivos inteligentes simultáneamente. Descubre qué nos espera en la era de la hiperconectividad
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/software3.webp" alt="Desarrollo de software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">Sostenibilidad</span>
+                                <h3 class="article-card__title">Green IT: Cómo Reducir la Huella de Carbono Digital</h3>
+                                <div class="article-card__meta">
+                                    <span>04 sep 2026</span>
+                                    <span>Luis Martinez</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Aprende técnicas para construir aplicaciones eficientes: desde la optimización de activos gráficos y consultas SQL hasta el uso de servidores alimentados por energía renovable y arquitecturas de código limpio.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/cloud3.webp" alt="cloud Computing" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--cloud">arquitectura Cloud</span>
+                                <h3 class="article-card__title">Edge Computing: Reduciendo la Latencia al Mínimo</h3>
+                                <div class="article-card__meta">
+                                    <span>01 agos 2026</span>
+                                    <span>natalia lima</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Vehículos autónomos, ciudades inteligentes y procesamiento de video en vivo requieren decisiones en milisegundos. Descubre cómo Edge Functions y nodos distribuidos están cambiando la arquitectura de software.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/software4.webp" alt="Desarrollo de software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">Desarrollo Web</span>
+                                <h3 class="article-card__title">Low-Code vs. Código Tradicional: ¿Amenaza o Aliado?</h3>
+                                <div class="article-card__meta">
+                                    <span>13 marz 2026</span>
+                                    <span>sofia cogos</span>
+                                </div>
+                                <p class="article-card__description">
+                                   Comparamos la velocidad de desarrollo de herramientas Low-Code/No-Code con la flexibilidad del código a medida. Descubre cómo los equipos modernos combinan ambos enfoques para maximizar la productividad.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/quantum2.webp" alt="Computación cuántica" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--trends"> Innovación Digita</span>
+                                <h3 class="article-card__title">Blockchain Más Allá de las Criptomonedas</h3>
+                                <div class="article-card__meta">
+                                    <span>11 dec 2026</span>
+                                    <span>sebastian Cañas</span>
+                                </div>
+                                <p class="article-card__description">
+                                    Desde la verificación de medicamentos hasta la trazabilidad de alimentos de origen orgánico. Exploramos casos de uso reales donde los contratos inteligentes y la inmutabilidad de datos transforman industrias tradicionales.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <img src="../assets/img/software5.webp" alt="Desarrollo de software" class="article-card__image">
+                            <div class="article-card__content">
+                                <span class="article-card__category article-card__category--software">DevOps</span>
+                                <h3 class="article-card__title">Kubernetes y el Futuro de las Aplicaciones Cloud Native</h3>
+                                <div class="article-card__meta">
+                                    <span>21 Jul 2056</span>
+                                    <span>lina garrido</span>
+                                </div>
+                                <p class="article-card__description">
+                                    La escalabilidad automática, la tolerancia a fallos y el despliegue continuo son pilares del desarrollo moderno. Repasamos las mejores prácticas para gestionar clústeres y microservicios eficientemente.
+                                </p>
+                                <a href="#" class="article-card__button">Leer más →</a>
+                            </div>
+                        </article>
+
+                    </div>
+                        <nav class="pagination">
+                            <a href="#" class="pagination__button pagination__button--disabled">Anterior</a>
+                            <a href="#" class="pagination__link pagination__link--active">1</a>
+                            <a href="#" class="pagination__link">2</a>
+                            <a href="#" class="pagination__link">3</a>
+                            <a href="#" class="pagination__button">Siguiente</a>
+                        </nav>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <div class="footer__brand">
+
+                <h3>Nexus Tech</h3>
+
+                <p>
+                    Tu fuente confiable sobre tecnología, innovación y desarrollo de software.
+                </p>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h4>Explorar</h4>
+
+                <a href="../index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="resenas.html">Reseñas</a>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h4>Comunidad</h4>
+
+                <a href="comunidad.html">Comunidad</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+            <div class="footer__column">
+
+                <h4>Síguenos</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">X</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer__copy">
+
+            © 2026 Nexus Tech. Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
