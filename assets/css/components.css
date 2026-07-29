@@ -644,3 +644,168 @@
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/*==================== COMPONENTES DE EVENTOS ====================*/
+
+/* Calendario Visual */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.calendar-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.calendar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--clr-primary);
+}
+
+.calendar-card__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+  min-width: 65px;
+  padding: 10px 8px;
+}
+
+.calendar-card__day {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--clr-primary);
+  line-height: 1;
+}
+
+.calendar-card__month {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.calendar-card__tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+  background: rgba(56, 189, 248, 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.calendar-card__tag--ai {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.15);
+}
+
+.calendar-card__tag--security {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.calendar-card__title {
+  font-size: 0.98rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.calendar-card__location {
+  font-size: 0.8rem;
+  color: var(--clr-text-light);
+}
+
+/* Eventos Destacados */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clr-primary);
+}
+
+.event-card__image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+.event-card__badge--secondary {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.event-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.event-card__date-str {
+  font-size: 0.85rem;
+  color: var(--clr-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event-card__title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.event-card__description {
+  color: var(--clr-text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
